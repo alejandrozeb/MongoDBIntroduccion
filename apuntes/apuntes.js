@@ -28,4 +28,21 @@ que es el interprete y se conecta a mongod en el puerto 27017
 
 EL intepreta porcesa datos
 2+2
+
+MONGODB
+BASE DE DATOS
+    se encarga de almacenar todos los datos con el contexto de una apliacacion.
+        usuarios, vendedores,ventas.
+    a la organizacion de estos datos se los llama como
+COLECCIONES
+   la colecciones serán:
+        coleccion usuarios
+        coleccion productos
+        coleccion categorias
+        coleccion ventas
+    guardamos distintos datos en cada coleccion, como sus atributos. estos datos se gurdan en un objeto json.
+    en sql serian las tablas.
+
+DOCUMENTOS
+    Son los datos en formato Json.
 */
