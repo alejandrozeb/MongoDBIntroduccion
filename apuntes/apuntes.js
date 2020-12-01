@@ -45,4 +45,25 @@ COLECCIONES
 
 DOCUMENTOS
     Son los datos en formato Json.
+
+Shell MOngo
+    Nos permite interaciion con la bd
+    ademas es un interprete de js.
+    acceso a operadores, librerias, crear funciones
+
+    si usamos 
+    db
+    sale la base de datos que estamos usando.
+    show dbs
+    muestra todas las bd
+    admin   0.000GB
+    config  0.000GB
+    local   0.000GB
+    Por defecto
+
+    CUando nos conectamos por defecto estamos en test
+    help 
+    nos muestra todas la opciones de ayuda
+
+
 */
