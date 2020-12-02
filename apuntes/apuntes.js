@@ -71,5 +71,14 @@ Shell MOngo
     Mongodb con use no gurda la bd hasta que guademos (insertar) un documento o dato en esa bd.
     Al insertar podemos ver que se guardo la bd con:
     show dbs
+
+
+    show collections 
+    muestra todas la coleccines en la bd.
+
+    db.dropDtabase()
+    elimina la base de datos actual, verifica que estas en la bd que quieres eliminar con el comando DB.
+
     
+
 */
