@@ -79,6 +79,28 @@ Shell MOngo
     db.dropDtabase()
     elimina la base de datos actual, verifica que estas en la bd que quieres eliminar con el comando DB.
 
-    
+    ---------------COLLECTIONS----------
+
+    db.createCollection("users")
+    db.createCollection("products")
+    db.createCollection("sellers")
+    crea en la bd actual la colección users.
+
+    db.products.drop()
+    Elimina la coleccion products y rettorna un true.
+
+    -------------Documentos--------------
+
+    un objeto json
+    key and value
+    laave y valor
+    {
+        "nombre": "laptop",
+        "precio": 40.2,
+        "active": false,
+        "created_at": 
+    }
+
+    todos los datos son de tipo string, int, booblean, date(podemos usar new date por que mongo tiene su interprete )
 
 */
