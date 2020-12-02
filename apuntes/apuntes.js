@@ -98,9 +98,19 @@ Shell MOngo
         "nombre": "laptop",
         "precio": 40.2,
         "active": false,
-        "created_at": 
+        "created_at": new Date("12/12/1999"),
+        "somedata": [1,"a",[]],
+        "fabricante": {
+            "nombre": "dell",
+            "version": "xps",
+            "location": {
+                "city": "usa",
+                "address": "asdasd"
+            }
+        }
     }
 
-    todos los datos son de tipo string, int, booblean, date(podemos usar new date por que mongo tiene su interprete )
+    todos los datos son de tipo string, int, booblean, date(podemos usar new date por que mongo tiene su interprete ), tambien podemos usar expresiones regulares, tambien se puden gurdar listas con diferentes tipos de dato,
+    objetos qye van a contener otros atributos
 
 */
