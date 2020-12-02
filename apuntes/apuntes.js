@@ -118,6 +118,17 @@ Shell MOngo
     bd.products.insert({data});
     crea una coleccion products con los datos de data(json).
 
-    db.products.find() muestra los productos.
+    db.products.find() muestra los productos o todos los datos de la coleccion.
+
+    db.products.find().pretty() muestra los datos ordenados.
+
+    mongo db transforma de json a bson para una busqueda mas rapida.
+    CRUD
+    Podemos gurdar docmuentos del mismo tipo pero de diferente estructura
+    products={"name":"keyboard"}
+    products={"name":"keyboard", "price": 9.99}
+    son el mismo tipo de documentosen la misma coleccion pero con diferentes atributos.
+    esta es una caracteristica de mongo no tiene estructura.
+    
 
 */
