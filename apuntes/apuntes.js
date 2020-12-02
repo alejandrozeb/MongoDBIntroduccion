@@ -65,5 +65,11 @@ Shell MOngo
     help 
     nos muestra todas la opciones de ayuda
 
+    use web store
+    crea y cambia a la base de datos llamada web store.
 
+    Mongodb con use no gurda la bd hasta que guademos (insertar) un documento o dato en esa bd.
+    Al insertar podemos ver que se guardo la bd con:
+    show dbs
+    
 */
