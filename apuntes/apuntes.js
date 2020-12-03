@@ -166,5 +166,13 @@ Shell MOngo
         Solo devuelve algunos datos, los que estan en valor de uno
     db.products.find({"tags":"computers"},{"name":1, "description":1,"_id":0})  
         el id viene por defecto en 1 para no verlo podemos darle el valor de 0.
+    -----------------ORDENAS LOS DATOS-------------
+    db.products.find({"tags":"computers"}).sort({name:1})   
+        Ordena  alfabeticamente de a - z, por defecto la lista s eordena de z-a.
+    db.products.find().limit(2)   
+        limta el numero de resultados devueltos.
+    db.products.find().count() 
+        cuenta los documentos.
+    
     
 */
