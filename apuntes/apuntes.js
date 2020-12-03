@@ -162,4 +162,9 @@ Shell MOngo
         mas de una limitante
     db.products.findOne({"tags":"computers"})    
         solo devuelve el primer resultados de toda laa lista de resultados
+    db.products.find({"tags":"computers"},{"name":1, "description":1})  
+        Solo devuelve algunos datos, los que estan en valor de uno
+    db.products.find({"tags":"computers"},{"name":1, "description":1,"_id":0})  
+        el id viene por defecto en 1 para no verlo podemos darle el valor de 0.
+    
 */
