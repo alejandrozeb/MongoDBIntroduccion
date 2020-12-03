@@ -174,5 +174,14 @@ Shell MOngo
     db.products.find().count() 
         cuenta los documentos.
     
+    -------------------FUNCIONES-------------
+    db.products.find().forEach(product => print("Product Name: " + product.name))  
+
+        muetsra todos los productos con un foreach, se usa print por que el interprete de mongo reconoce esta palabra reservada y no console.log.
+
+    db.products.find().forEach(product => print("Product Name: " + product.price))
+        mustra el precio de cada documento, los campos que no tiene ese atributo se los devuelve como undefined.
     
+    
+
 */
