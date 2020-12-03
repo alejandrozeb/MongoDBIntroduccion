@@ -130,5 +130,25 @@ Shell MOngo
     son el mismo tipo de documentosen la misma coleccion pero con diferentes atributos.
     esta es una caracteristica de mongo no tiene estructura.
     
+    se pueden añadir listas de documentos
+
+    db.products.insert([
+        {
+            "name": "mouse",
+            "description": "razer mouse",
+            "tags": ["computers", "gaming"],
+            "quantity": 14,
+            "created_at": new Date()
+        },
+        {
+            "name": "monitor",
+            "description": "lg monitor",
+            "tags": ["computers", "gaming"],
+            "quantity": 3,
+            "created_at": new Date()
+        }
+    ])
+
+    con boton derechopuedes copiar texto a la consola de mongo
 
 */
