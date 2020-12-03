@@ -150,5 +150,16 @@ Shell MOngo
     ])
 
     con boton derechopuedes copiar texto a la consola de mongo
+    -------------------BUSCAR DOCUMETNOS-------------
+    db.products.find({"name": "mouse"})
+        encuentra un documento con el nombre = mouse
 
+    db.products.find({"price": 999.99})
+        por el tipo de dato.
+    db.products.find({"tags":"computers"})   
+        encuentra a todos los que tienen tags.
+    db.products.find({"tags":"computers","name":"monitor"}) 
+        mas de una limitante
+    db.products.findOne({"tags":"computers"})    
+        solo devuelve el primer resultados de toda laa lista de resultados
 */
