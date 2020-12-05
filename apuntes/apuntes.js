@@ -205,5 +205,12 @@ Shell MOngo
     ---------------------remonbrar propiedades u atributos--------------
     db.products.update({"name": "laptop"},{$rename:{"name":"nombre"}})
         renombra la propiedad, la encuentra y la actualiza a nombre, $rename nos permite hacer esta operacion además el json siguiente enviamos el nombre de la propiedad antigua y al lado la nueva.
-    
+    ---------------eliminar------------------------------------------------------------
+    db.products.remove({"nombre":"keyboard"}) 
+        busca el documento con propiedad nombre y el dato keyboard, si existe elimina el documento.
+    db.products.remove({}) 
+        Elimina todos los documentos.
+    -----------------compass------------------------
+    es la nterfaz grafica de todo esto
+    ademas tenemos mongodbatlas que nos permite manejar nustra bd en un cluster y tenerlo listo para produccion.
 */
