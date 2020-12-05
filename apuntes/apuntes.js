@@ -203,5 +203,7 @@ Shell MOngo
         Para incrementar usmos el $inc que perimite sumar al atributo que enviemos.
     
     ---------------------remonbrar propiedades u atributos--------------
-
+    db.products.update({"name": "laptop"},{$rename:{"name":"nombre"}})
+        renombra la propiedad, la encuentra y la actualiza a nombre, $rename nos permite hacer esta operacion además el json siguiente enviamos el nombre de la propiedad antigua y al lado la nueva.
+    
 */
