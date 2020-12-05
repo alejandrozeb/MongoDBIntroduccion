@@ -181,7 +181,24 @@ Shell MOngo
 
     db.products.find().forEach(product => print("Product Name: " + product.price))
         mustra el precio de cada documento, los campos que no tiene ese atributo se los devuelve como undefined.
-    
+    ------------UPDATE-------------------
+    db.products.update({"name": "keyboard"},{"price":99.99})
+        Busca el dumento con name keyboard y añade un atributo llamado price al documento.
+        recibimos 1 y 1 como respuetas significa que si fue encontrado y modificado.
+        { "_id" : ObjectId("5fc720dde5671b3e337db36d"), "price" : 99.99 }
+
+        pero se elimina los datos previos como el name y tags, el update reemplaza el documento que encuentra por el json que enviamos.
+
+        db.products.update({"price": 99.99},{"name":"keyboard","price": 99.9})
+
+        actualizamos el mismo documento pero con el informaciond e name y price. pero si no queremos reemplazar todo el dumento.
+
+         db.products.update({"name": "laptop"},{$set:{"description":"lg gram laptop"}})
+
+         con el set podemos modificar el contenido del documento sin afectar a los demas atributos.
+
+         
+
     
 
 */
