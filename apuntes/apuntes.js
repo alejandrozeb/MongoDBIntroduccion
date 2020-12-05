@@ -189,16 +189,19 @@ Shell MOngo
 
         pero se elimina los datos previos como el name y tags, el update reemplaza el documento que encuentra por el json que enviamos.
 
-        db.products.update({"price": 99.99},{"name":"keyboard","price": 99.9})
+    db.products.update({"price": 99.99},{"name":"keyboard","price": 99.9})
 
         actualizamos el mismo documento pero con el informaciond e name y price. pero si no queremos reemplazar todo el dumento.
 
-         db.products.update({"name": "laptop"},{$set:{"description":"lg gram laptop"}})
+    db.products.update({"name": "laptop"},{$set:{"description":"lg gram laptop"}})
 
          con el set podemos modificar el contenido del documento sin afectar a los demas atributos.
-
-         
-
+        
+    db.products.update({"name": "desktop"},{$set:{"description":"Gaming desktop"}},{upsert:true}) 
+        queremos insertar un docmetno pero la onformacion con desktop no existe entonces, agregando al final el upsert,  si no encuentra el documento se crea uno nuevo con la informacion que enviamos con el set y el dato con el que hicimos la comparacion(desktop).
+    db.products.update({"name": "keyboard"},{$inc:{"price":0.1}})
+        Para incrementar usmos el $inc que perimite sumar al atributo que enviemos.
     
+    ---------------------remonbrar propiedades u atributos--------------
 
 */
